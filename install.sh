@@ -6,8 +6,7 @@ cd $HOME/steamcmd
 wget -P $HOME/steamcmd/ https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 tar -xvzf $HOME/steamcmd/steamcmd_linux.tar.gz
 $HOME/steamcmd.sh +force_install_dir $HOME/dontstarvetogether_dedicated_server +login anonymous +app_update 343050 validate +quit
-
-
+git clone https://github.com/328333982/Dontstarvetogether_Dedicated_Server.git
+copy -R $HOME/Dontstarvetogether_Dedicated_Server $HOME/
 
 chmod u+x $HOME/run_dedicated_servers.sh
-$HOME/run_dedicated_servers.sh
